@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AssistantsEnum, OpenAssistantService } from '../open-assistant.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private openAssistantService: OpenAssistantService) {}
 
+  public openMonographAssistant(): void {
+    this.openAssistantService.openAssistant(AssistantsEnum.MONOGRAPH);
+  }
+
+  public openTechnicalStandardsAssistant(): void {
+    this.openAssistantService.openAssistant(AssistantsEnum.TECHNICAL_STANDARDS);
+  }
 }

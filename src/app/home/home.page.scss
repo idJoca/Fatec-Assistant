@@ -6,6 +6,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  padding: 5px;
 }
 
 #container strong {
@@ -24,4 +25,15 @@
 
 #container a {
   text-decoration: none;
+}
+
+.mybtn {
+  width: 200px;
+}
+
+.back {
+  float:right;
+  margin-right: 10px;
+  background-color:transparent;
+  text-decoration: underline;
 }

@@ -1,20 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Fatec Assistant
     </ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-text color="dark">
 
+  </ion-text>
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h4>Escolha um assunto:</h4>
+    <ion-button class="mybtn" shape="round" fill="outline" (click)="openMonographAssistant()">Monografia</ion-button>
+    <br>
+    <ion-button class="mybtn" shape="round" fill="outline" (click)="openTechnicalStandardsAssistant()">Normas Técnicas
+    </ion-button>
   </div>
 </ion-content>
